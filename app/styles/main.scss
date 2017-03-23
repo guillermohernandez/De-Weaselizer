@@ -1,0 +1,104 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+$background-color: #EE6567;
+$light-pink: #F4888A;
+$gray: #65737e;
+
+body {
+  background: $background-color;
+}
+
+.container {
+  margin: 100px auto;
+  width: 300px;
+  height: 50px;
+}
+
+.inner-container {
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.inner-container input#lingo {
+  width: 300px;
+  height: 50px;
+  background: $light-pink;
+  border: none;
+  font-size: 16px;
+  color: #262626;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: background .55s ease;
+  -moz-transition: background .55s ease;
+  -ms-transition: background .55s ease;
+  -o-transition: background .55s ease;
+  transition: background .55s ease;
+}
+
+.inner-container input#lingo::-webkit-input-placeholder {
+  color: $gray;
+}
+
+.inner-container input#lingo:-moz-placeholder {
+  /* Firefox 18- */
+  color: $gray;
+}
+
+.inner-container input#lingo::-moz-placeholder {
+  /* Firefox 19+ */
+  color: $gray;
+}
+
+.inner-container input#lingo:-ms-input-placeholder {
+  color: $gray;
+}
+
+.inner-container input#lingo:hover,
+.inner-container input#lingo:focus,
+.inner-container input#lingo:active {
+  outline: none;
+  background: #EFEFEF;
+}
+
+#deweazeled {
+  margin-top: 25px;
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+
+/* start commented backslash hack \*/
+
+* html .clearfix {
+  height: 1%;
+}
+
+.clearfix {
+  display: block;
+}
+
+
+/* close commented backslash hack */
