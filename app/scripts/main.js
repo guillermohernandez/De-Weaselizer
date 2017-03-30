@@ -25,11 +25,15 @@ input.addEventListener('input', function() {
     break;
       
     case 'nugs':
-    deweazeled.textContent = 'nugs';
+    deweazeled.textContent = 'attrative women';
     break;
       
     case 'beak':
     deweazeled.textContent = 'face';
+    break;
+
+    case 'chillin':
+    deweazeled.textContent = 'hanging out';
     break;
       
     default:
